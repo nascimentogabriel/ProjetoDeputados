@@ -20,6 +20,10 @@ public class TrabalhoapiaulaApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println(deputadoService.buscarDeputados("10").dados.get(0).getNome());
+		System.out.println(deputadoService.buscarDeputados("10").dados.get(0).getEmail());
+		System.out.println(deputadoService.buscarDeputados("10").dados.get(0).getSiglaPartido());
+		System.out.println(deputadoService.buscarDeputados("10").dados.get(0).getId());
+		System.out.println(deputadoService.buscarDeputados("10").dados.get(0).getUrlFoto());
 		
 	}
 
